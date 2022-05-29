@@ -41,9 +41,9 @@ function combiner(type,list1,list2) {
 
             }
 
-        }
+            finish = true;
 
-        finish = true;
+        }
 
     }
 
