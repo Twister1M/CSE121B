@@ -5,7 +5,7 @@ function combiner(type,list1,list2) {
 
     // Simply combines both lists //
 
-    if (type == 1) {
+    if (type === 1) {
 
         output = list1.concat(list2);
 
@@ -13,15 +13,15 @@ function combiner(type,list1,list2) {
 
     // Makes a list of 1:1 pairs of items from the lists of same length. //
 
-    else if (type == 2) {
+    else if (type === 2) {
 
-        if (list1.length != list2.length) {
+        if (list1.length !== list2.length) {
 
-            print('Error: Lists not equal size.');
+            console.log('Error: Lists not equal size.');
 
         }
 
-        else if (list1.length == list2.length) {
+        else if (list1.length === list2.length) {
 
             max = list1.length - 1;
 
@@ -43,7 +43,7 @@ function combiner(type,list1,list2) {
 
     // Makes a list of every possible combination of lists. //
 
-    else if (type == 3) {
+    else if (type === 3) {
 
         maxl1 = list1.length - 1;
 
