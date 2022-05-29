@@ -5,9 +5,13 @@ function combiner(type,list1,list2) {
 
     // Simply combines both lists //
 
+    finish = false;
+
     if (type === 1) {
 
         output = list1.concat(list2);
+
+        finish = true;
 
     }
 
@@ -39,6 +43,8 @@ function combiner(type,list1,list2) {
 
         }
 
+        finish = true;
+
     }
 
     // Makes a list of every possible combination of lists. //
@@ -69,8 +75,14 @@ function combiner(type,list1,list2) {
 
         }
 
+        finish = true;
+
     }
 
-    console.log(output)
+    if (finish == true) {
+
+        console.log(output)
+
+    }
 
 }
