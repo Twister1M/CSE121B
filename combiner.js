@@ -71,6 +71,6 @@ function combiner(type,list1,list2) {
 
     }
 
-}
+    console.log(output)
 
-console.log(output)
+}
