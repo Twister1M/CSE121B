@@ -27,7 +27,7 @@ function combiner(type,list1,list2) {
 
         else if (list1.length === list2.length) {
 
-            max = list1.length - 1;
+            max = list1.length;
 
             n = 0;
 
@@ -35,7 +35,7 @@ function combiner(type,list1,list2) {
 
             while (n < max) {
 
-                output = output.push([list1[n],list2[n]]);
+                output.push([list1[n],list2[n]]);
 
                 n = n + 1;
 
@@ -51,9 +51,9 @@ function combiner(type,list1,list2) {
 
     else if (type === 3) {
 
-        maxl1 = list1.length - 1;
+        maxl1 = list1.length;
 
-        maxl2 = list2.length - 1;
+        maxl2 = list2.length;
 
         n = 0
 
@@ -65,7 +65,7 @@ function combiner(type,list1,list2) {
 
             while (m < maxl2) {
 
-                output = output.push([list1[n],list2[m]]);
+                output.push([list1[n],list2[m]]);
 
                 m = m + 1;
 
